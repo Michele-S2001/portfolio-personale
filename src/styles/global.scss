@@ -1,3 +1,6 @@
+@use '@fontsource-variable/fira-code';
+@use './partials/vars' as *;
+@use './partials/utilities';
 /**
   resets
 **/
@@ -7,3 +10,23 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol, menu {
+  list-style: none;
+}
+
+body {
+  background-color: $grey;
+  color: $white;
+  font-family: 'Fira Code Variable', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: currentColor;
+}

@@ -1,12 +1,19 @@
 <script>
+import AppHeader from './components/AppNavbar.vue';
 
+export default {
+  components: {
+    AppHeader
+  }
+}
 
 </script>
 
 <template>
-  <h1>Lorem ipsum</h1>
+  <AppHeader/>
+  <router-view></router-view>
 </template>
 
-<style>
-
+<style lang="scss">
+@import './styles/global.scss';
 </style>

@@ -12,16 +12,16 @@
             </div>
             <!-- contatti -->
             <div class="contacts">
-              <a href="https://github.com/Michele-S2001" target="_blank">
+              <a class="icon" href="https://github.com/Michele-S2001" target="_blank">
                 <font-awesome-icon icon="fa-brands fa-github" size="2xl" />
               </a>
-              <a href="https://www.linkedin.com/in/michele-serafini-08574b1b7/" target="_blank">
+              <a class="icon" href="https://www.linkedin.com/in/michele-serafini-08574b1b7/" target="_blank">
                 <font-awesome-icon icon="fa-brands fa-linkedin" size="2xl" />
               </a>
-              <a href="mailto: serafini.michele01@gmail.com">
+              <a class="icon" href="mailto: serafini.michele01@gmail.com">
                 <font-awesome-icon icon="fa-regular fa-envelope" size="2xl"/>
               </a>
-              <a href="https://www.instagram.com/myser2001/">
+              <a class="icon" href="https://www.instagram.com/myser2001/">
                 <font-awesome-icon icon="fa-brands fa-instagram" size="2xl"/>
               </a>
             </div>
@@ -47,7 +47,7 @@ import AppDefaulLayout from '../layouts/AppDefaulLayout.vue';
 </script>
 
 <style lang="scss" scoped>
-
+@use '../styles/partials/vars' as *;
 .home {
   padding-top: 100px;
 
@@ -61,6 +61,7 @@ import AppDefaulLayout from '../layouts/AppDefaulLayout.vue';
       flex-direction: column;
       justify-content: space-between;
       padding: 50px 0;
+      user-select: none;
 
       .presentation {
         &__main-title {
@@ -78,6 +79,12 @@ import AppDefaulLayout from '../layouts/AppDefaulLayout.vue';
         display: flex;
         flex-wrap: wrap;
         gap: 14px;
+
+        .icon {
+          &:hover {
+            color: $orange;
+          }
+        }
       }
     }
 

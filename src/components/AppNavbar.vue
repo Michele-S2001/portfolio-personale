@@ -23,7 +23,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+@use '../styles/partials/vars' as *;
 .page-header {
 
   .navbar {
@@ -32,13 +32,21 @@
     padding: 20px 0;
     font-size: 21px;
 
-    &__link a {
-      line-height: 50px;
+    &__link {
+      &:hover {
+        color: $orange;
+      }
+
+      a {
+        line-height: 50px;
+      }
+
+      &:first-child {
+        margin-right: auto;
+      }
     }
 
-    &__link:first-child {
-      margin-right: auto;
-    }
+
   }
 }
 

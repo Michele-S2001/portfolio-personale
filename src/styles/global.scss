@@ -23,6 +23,15 @@ body {
   background-color: $grey;
   color: $white;
   font-family: 'Fira Code Variable', sans-serif;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(../../img/Sprinkle.svg);
+    opacity: 0.1;
+    z-index: -2;
+  }
 }
 
 a {

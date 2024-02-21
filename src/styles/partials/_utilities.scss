@@ -12,6 +12,12 @@
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
 .px-10 {
   padding-left: 10px;
   padding-right: 10px;

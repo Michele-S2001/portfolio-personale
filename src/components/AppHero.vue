@@ -7,7 +7,7 @@
 <template>
   <section class="hero px-10">
     <div class="container-sm">
-      <div class="hero__inner">
+      <div class="hero__inner grid">
         <!-- left side -->
         <div class="description">
           <!-- saluti con nome -->
@@ -45,15 +45,13 @@
 <style lang="scss" scoped>
 @use '../styles/partials/vars' as *;
 .hero {
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 
   &__inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
 
     .description {
+      grid-column: 1 / 7;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -85,9 +83,12 @@
       }
     }
 
-    .thumbnail img {
-      border-radius: 200px;
-    }
+    .thumbnail {
+      grid-column: 7 / 13;
+      img {
+        border-radius: 200px;
+      }
+    } 
   }
 }
 
@@ -95,12 +96,16 @@
   .hero {
 
     &__inner {
-      display: block;
-
-      .thumbnail img {
-        margin: 0 auto;
-        max-height: 400px;
+      .description {
+        grid-column: 1 / -1;
       }
+      .thumbnail {
+        grid-column: 1 / -1;
+        img {
+          margin: 0 auto;
+          max-height: 400px;
+        }
+      } 
     }
   }
 }

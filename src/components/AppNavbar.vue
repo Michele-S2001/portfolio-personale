@@ -1,12 +1,26 @@
+<script>
+export default {
+  methods: {
+    scrollTo(element) {
+      const targetElement = document.getElementById(`${element}`);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+  }
+}
+
+</script>
+
 <template>
   <header class="page-header px-10">
     <div class="container">
       <nav class="navbar">
         <div class="navbar__link">
-          <a href="#">Home</a>
+          <router-link :to="{ name: 'home'}">Home</router-link>
         </div>
         <div class="navbar__link">
-          <a href="#">About</a>
+          <a @click="scrollTo('about')">About</a>
         </div>
         <div class="navbar__link">
           <a href="#">Projects</a>
@@ -16,12 +30,6 @@
   </header>
 </template>
 
-<script>
-  export default {
-    
-  }
-</script>
-
 <style lang="scss" scoped>
 @use '../styles/partials/vars' as *;
 .page-header {
@@ -29,6 +37,7 @@
   top: 20px;
   left: 0;
   right: 0;
+  z-index: 99;
   .navbar {
     backdrop-filter: blur(10px);
     display: flex;
@@ -39,6 +48,7 @@
     box-shadow: inset 0px 0px 8px 3px rgba($white, $alpha: 0.55);
 
     &__link {
+      cursor: pointer;
       position: relative;
       transition: 0.2s ease-in;
       &:hover {

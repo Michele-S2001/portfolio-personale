@@ -3,10 +3,10 @@
     <div class="container">
       <div class="about grid">
         <div class="about__title">
-          About
+          Ab<span>out</span> 
         </div>
         <div class="about__text">
-          Salve a tutti, sono Michele Serafini Jr., un appassionato Full Stack Web Developer che ha appena fatto il suo ingresso nel mondo dello sviluppo. Sono qui con grande entusiasmo e determinazione per imparare e crescere. Con una mentalità aperta e la voglia di affrontare nuove sfide, non vedo l'ora di mettermi alla prova e contribuire al mondo della tecnologia. Grazie per la visita sul mio primo e semplice portfolio online !
+          Salve visitatore, sono Michele Serafini, un appassionato e neofita Full Stack Web Developer che ha appena fatto il suo ingresso in questo mondo. Sono qui con grande entusiasmo e determinazione per imparare e crescere. Con una mentalità aperta e la voglia di affrontare nuove sfide, non vedo l'ora di mettermi alla prova e contribuire al mondo della tecnologia. Grazie per la visita sul mio primo e semplice portfolio online !
         </div>
       </div>
       <div class="cv-download">
@@ -18,9 +18,10 @@
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixins' as *;
+@use '../styles/partials/vars' as *;
 .about-section {
   padding-top: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 
   .about {
     margin-bottom: 60px;
@@ -28,6 +29,10 @@
       grid-column: 1 / 5;
       padding-top: 20px;
       font-size: clamp(46px, 6vw, 70px);
+
+      span {
+        color: $orange;
+      }
     }
 
     &__text {

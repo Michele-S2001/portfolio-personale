@@ -12,7 +12,7 @@
         <div class="description">
           <!-- saluti con nome -->
           <div class="presentation">
-            <h1 class="presentation__main-title">Ciao! Sono Michele Serafini</h1>
+            <h1 class="presentation__main-title">Ciao! Sono <span>Michele</span> Serafini</h1>
             <p class="presentation__job">Full-Stack Web Developer</p>
           </div>
           <!-- contatti -->
@@ -45,8 +45,8 @@
 <style lang="scss" scoped>
 @use '../styles/partials/vars' as *;
 .hero {
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 150px;
 
   &__inner {
 
@@ -62,6 +62,9 @@
         &__main-title {
           font-size: 45px;
           margin-bottom: 24px;
+          span {
+            color: $orange;
+          }
         }
 
         &__job {
@@ -94,6 +97,8 @@
 
 @media (max-width: 768px) {
   .hero {
+    padding-top: 150px;
+    padding-bottom: 100px;
 
     &__inner {
       .description {

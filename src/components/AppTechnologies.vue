@@ -9,21 +9,21 @@
     <div class="container">
       <h2>Tecn<span>olo</span>gie</h2>
       <div class="tools">
-        <img class="tool" src="../../img/tools/html-5.png" alt="HTML5 logo">
-        <img class="tool" src="../../img/tools/css-3.png" alt="logo">
-        <img class="tool" src="../../img/tools/js.png" alt="js logo">
-        <img class="tool" src="../../img/tools/laravel-2.svg" alt="laravel logo">
-        <img class="tool" src="../../img/tools/mysql-logo.svg" alt="mysql logo">
-        <img class="tool" src="../../img/tools/php.png" alt="logo">
-        <img class="tool" src="../../img/tools/sass.png" alt="php logo">
-        <img class="tool" src="../../img/tools/vitejs.svg" alt="vitejs logo">
-        <img class="tool" src="../../img/tools/vue-9.svg" alt="vue logo">
-        <img class="tool" src="../../img/tools/bootstrap.png" alt="bootstrap logo">
-        <img class="tool" src="../../img/tools/git.png" alt="git logo">
-        <img class="tool" src="../../img/tools/github-icon-2.svg" alt="github logo">
-        <img class="tool" src="../../img/tools/microsoft-5.svg" alt="microsoft logo">
-        <img class="tool" src="../../img/tools/postman.svg" alt="postman logo">
-        <img class="tool" src="../../img/tools/visual-studio-code-1.svg" alt="vscode logo">
+        <img class="tool" src="../../img/technologies-imgs/html.png" alt="HTML5 logo">
+        <img class="tool" src="../../img/technologies-imgs/css.png" alt="logo">
+        <img class="tool" src="../../img/technologies-imgs/js.png" alt="js logo">
+        <img class="tool" src="../../img/technologies-imgs/laravel.svg" alt="laravel logo">
+        <img class="tool" src="../../img/technologies-imgs/mysql.svg" alt="mysql logo">
+        <img class="tool" src="../../img/technologies-imgs/php.png" alt="logo">
+        <img class="tool" src="../../img/technologies-imgs/sass.png" alt="php logo">
+        <img class="tool" src="../../img/technologies-imgs/vitejs.svg" alt="vitejs logo">
+        <img class="tool" src="../../img/technologies-imgs/vue.svg" alt="vue logo">
+        <img class="tool" src="../../img/technologies-imgs/bootstrap.png" alt="bootstrap logo">
+        <img class="tool" src="../../img/technologies-imgs/git.png" alt="git logo">
+        <img class="tool" src="../../img/technologies-imgs/github.svg" alt="github logo">
+        <img class="tool" src="../../img/technologies-imgs/microsoft.svg" alt="microsoft logo">
+        <img class="tool" src="../../img/technologies-imgs/postman.svg" alt="postman logo">
+        <img class="tool" src="../../img/technologies-imgs/vscode.svg" alt="vscode logo">
       </div>
     </div>
   </section>

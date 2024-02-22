@@ -41,20 +41,22 @@ export default {
           <a @click="scrollTo('about')">About</a>
         </div>
         <div class="navbar__link toHide">
-          <a @click="scrollTo('projects')">Progetti</a>
+          <a @click="scrollTo('technologies')">Tecnologie</a>
         </div>
         <div class="navbar__link toHide">
-          <a @click="scrollTo('technologies')">Tools</a>
+          <a @click="scrollTo('projects')">Progetti</a>
         </div>
         <div class="hamburger" @click="showCanvas">
           <font-awesome-icon icon="bars" />
         </div>
       </nav>
     </div>
-    <div class="hideMenu" :class="{'show' : showOffCanvas}">
+    <div class="offCanvas" :class="{'show' : showOffCanvas}">
       <font-awesome-icon icon="x" size="xl" @click="hideCanvas" class="x"/>
       <div class="links">
+        <a @click="scrollToTop()">&lt;/&gt;</a>
         <a @click="scrollTo('about')">About</a>
+        <a @click="scrollTo('technologies')">Tecnologie</a>
         <a @click="scrollTo('projects')">Progetti</a>
       </div>
     </div>
@@ -70,6 +72,7 @@ export default {
   right: 0;
   z-index: 99;
   .navbar {
+    background-color: rgba($grey, $alpha: 0.6);
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
@@ -118,17 +121,19 @@ export default {
     }
 
   }
-  .hideMenu {
+  .offCanvas {
     display: none;
-    transform: translateX(670px);
-    padding: 20px;
+    transform: translateX(670px) rotate(-10deg);
+    padding-top: 30px;
+    padding-right: 40px;
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
-    width: 80%;
+    width: 70vw;
     text-align: right;
     backdrop-filter: blur(20px);
+    background-color: rgba($grey, $alpha: 0.6);
     transition: 0.5s ease-in;
 
     .x {
@@ -136,14 +141,17 @@ export default {
     }
 
     .links {
-      padding: 30px;
+      padding-top: 24px;
       line-height: 64px;
       font-size: 24px;
+      & > * {
+        cursor: pointer;
+      }
     }
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .page-header {
     .navbar {
 
@@ -155,7 +163,7 @@ export default {
       }
     }
 
-    .hideMenu {
+    .offCanvas {
       display: block;
 
       &.show {
@@ -164,5 +172,4 @@ export default {
     }
   }
 }
-
 </style>

@@ -76,7 +76,8 @@
       .contacts {
         display: flex;
         flex-wrap: wrap;
-        gap: 14px;
+        gap: 34px;
+        font-size: 24px;
 
         .icon {
           &:hover {

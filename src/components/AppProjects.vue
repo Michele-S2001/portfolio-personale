@@ -5,36 +5,42 @@ export default {
       projects: [
         {
           name: 'Dashboard',
+          link: 'https://github.com/Michele-S2001/html-css-bootstrap-dashboard',
           imgPath: '../../img/projects/project-2.png',
           description: 'Una dashboard progettata per far pratica con bootstrap, costruendo quindi un gestionale con l\'aiuto di questo framework, gestendo le sue utility class per un layout responsive',
           visible: false
         },
         {
           name: 'Discord',
+          link: 'https://github.com/Michele-S2001/htmlcss-discord',
           imgPath: '../../img/projects/project-3.png',
           description: 'Una replica di discord interamente in HTML e CSS plain',
           visible: false
         },
         {
           name: 'Spotify',
+          link: 'https://github.com/Michele-S2001/html-css-spotifyweb',
           imgPath: '../../img/projects/project-5.png',
           description: 'Una replica della webapp di spotify che ci ha messo alla prova nella gestione dell\'overflow, del flexbox e il comportamento responsive del layout',
           visible: false
         },
         {
           name: 'Boolzapp',
+          link: 'https://github.com/Michele-S2001/vue-boolzapp',
           imgPath: '../../img/projects/project-7.png',
           description: 'Una replica di WhatsApp web utilizzando HTML, CSS, JavaScript con il framework Vue.js. Vue.js utilizzato per gestire in maniera efficente  lo stato dell\'applicazione e fornire una migliore esperienza utente, come la dinamicità delle chat per ogni contatto.',
           visible: false
         },
         {
           name: 'Boolflix',
+          link: 'https://github.com/Michele-S2001/vite-boolflix',
           imgPath: '../../img/projects/project-9.png',
           description: 'Sviluppo di una piattaforma di streaming video simile a Netflix, concentrandoci sull\'utilizzo di chiamate Axios per recuperare i dati dei film/serie-TV da un API di TMDB. Tutto questo utilizzando HTML, CSS, Axios, Vue.js e Node.js per creare una piattaforma reattiva alla ricerca dell\'utente',
           visible: false
         },
         {
           name: 'Deliveboo - TasteIT',
+          link: 'https://github.com/Michele-S2001?tab=repositories&q=deliveboo&type=&language=&sort=',
           imgPath: '../../img/projects/project-10.png',
           description: 'Il progetto finale, contornato dall\'utilizzo di tutte le tecnologie e strumenti visti durante il corso boolean, un unione tra front-office con Vite (HTML, CSS, VUE) e back-office con Laravel (PHP, BOOTSTRAP), sviluppando le CRUD per il ristoratore autenticato e le API per una facile accessibilità ai dati da parte del cliente. Tutto rigorosamente riadattabile a qualsiasi viewport',
           visible: false
@@ -67,7 +73,7 @@ export default {
           </div>
           <div class="project-card__body">
             <div class="buttons">
-              <a href="#" class="cta-github">
+              <a :href="project.link" class="cta-github" target="_blank">
                 <font-awesome-icon icon="fa-brands fa-github" size="2xl" />
                 Github
               </a>

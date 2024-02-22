@@ -27,7 +27,7 @@ export default {
           <a @click="scrollTo('about')">About</a>
         </div>
         <div class="navbar__link">
-          <a @click="scrollTo('projects')">Projects</a>
+          <a @click="scrollTo('projects')">Progetti</a>
         </div>
       </nav>
     </div>

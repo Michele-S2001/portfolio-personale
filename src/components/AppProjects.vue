@@ -3,11 +3,11 @@ export default {
   data() {
     return {
       projects: [
-      {
-          name: 'Deliveboo - TasteIT',
+        {
+          name: 'TasteIT',
           link: 'https://github.com/Michele-S2001?tab=repositories&q=deliveboo&type=&language=&sort=',
           imgPath: '../../img/projects/project-10.png',
-          description: 'Il progetto finale, contornato dall\'utilizzo di tutte le tecnologie e strumenti visti durante il corso boolean, un unione tra front-office con Vite (HTML, CSS, VUE) e back-office con Laravel (PHP, BOOTSTRAP), sviluppando le CRUD per il ristoratore autenticato e le API per una facile accessibilità ai dati da parte del cliente. Tutto rigorosamente riadattabile a qualsiasi viewport',
+          description: 'Il progetto finale con Boolean, contornato dall\'utilizzo di tutte le tecnologie e strumenti visti durante il corso boolean, un unione tra front-office con Vite (HTML, CSS, VUE) e back-office con Laravel (PHP, BOOTSTRAP), sviluppando le CRUD per il ristoratore autenticato e le API per una facile accessibilità ai dati da parte del cliente. Tutto rigorosamente riadattabile a qualsiasi viewport',
           visible: false
         },
         {
@@ -63,7 +63,7 @@ export default {
 <template>
   <section id="projects" class="projects-section px-10">
     <div class="container">
-      <h2 class="section-title">Alcuni progetti</h2>
+      <h2 class="section-title"><span>Alcuni</span> progetti</h2>
       <div class="projects">
         <!-- start project card -->
         <div class="project-card" v-for="(project, i) in projects" :key="i">
@@ -107,6 +107,9 @@ export default {
     font-weight: normal;
     font-size: 42px;
     margin-bottom: 46px;
+    span {
+      color: $orange;
+    }
   }
   .projects {
     display: grid;
@@ -136,7 +139,9 @@ export default {
 
       &__body {
         .buttons {
+          gap: 15px;
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-around;
           .cta-github {
             @include ctaButton();
@@ -145,6 +150,7 @@ export default {
           .cta-description {
             color: $white;
             padding: 0 10px;
+            line-height: 34px;
             &:hover {
               background-color: $white;
               color: $grey;
@@ -181,4 +187,15 @@ export default {
     }
   }
 }
+
+@media (max-width: 350px) {
+
+  .projects-section {
+    .projects {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+
+}
+
 </style>

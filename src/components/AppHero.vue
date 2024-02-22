@@ -45,7 +45,7 @@
 <style lang="scss" scoped>
 @use '../styles/partials/vars' as *;
 .hero {
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 150px;
 
   &__inner {

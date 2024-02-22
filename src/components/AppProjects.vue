@@ -130,7 +130,7 @@ export default {
         img {
           object-position: top;
           object-fit: cover;
-          height: 240px;
+          height: 260px;
           width: 100%;
           box-shadow: 0px 1px 14px 2px rgba(255,106,0,0.83);
           margin-bottom: 20px;

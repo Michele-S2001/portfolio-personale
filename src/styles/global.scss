@@ -10,6 +10,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: $grey;
+  color: $white;
+  font-family: 'Fira Code Variable', sans-serif;
+  background-image: url(../../img/Sprinkle_2.svg);
+  background-position: cover;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -19,13 +27,14 @@ ul, ol, menu {
   list-style: none;
 }
 
-body {
-  background-color: $grey;
-  color: $white;
+button {
+  cursor: pointer;
   font-family: 'Fira Code Variable', sans-serif;
-  background-image: url(../../img/Sprinkle_2.svg);
-  background-position: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
+
 
 a {
   text-decoration: none;

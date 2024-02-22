@@ -7,6 +7,10 @@ export default {
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     },
+
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth'});
+    }
   }
 }
 
@@ -17,13 +21,13 @@ export default {
     <div class="container">
       <nav class="navbar">
         <div class="navbar__link">
-          <router-link :to="{ name: 'home'}">Home</router-link>
+          <a @click="scrollToTop()">&lt;/&gt;</a>
         </div>
         <div class="navbar__link">
           <a @click="scrollTo('about')">About</a>
         </div>
         <div class="navbar__link">
-          <a href="#">Projects</a>
+          <a @click="scrollTo('projects')">Projects</a>
         </div>
       </nav>
     </div>
@@ -34,7 +38,7 @@ export default {
 @use '../styles/partials/vars' as *;
 .page-header {
   position: fixed;
-  top: 20px;
+  top: 6px;
   left: 0;
   right: 0;
   z-index: 99;
@@ -61,7 +65,7 @@ export default {
       }
 
       a {
-        line-height: 40px;
+        line-height: 34px;
           &::before {
           content: '';
           display: block;

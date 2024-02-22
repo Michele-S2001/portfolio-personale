@@ -9,21 +9,21 @@
     <div class="container">
       <h2>Tecn<span>olo</span>gie</h2>
       <div class="tools">
-        <img class="tool" src="../../img/html.png" alt="HTML5 logo">
-        <img class="tool" src="../../img/css.png" alt="logo">
-        <img class="tool" src="../../img/js.png" alt="js logo">
-        <img class="tool" src="../../img/laravel.svg" alt="laravel logo">
-        <img class="tool" src="../../img/mysql.svg" alt="mysql logo">
-        <img class="tool" src="../../img/php.png" alt="logo">
-        <img class="tool" src="../../img/sass.png" alt="php logo">
-        <img class="tool" src="../../img/vitejs.svg" alt="vitejs logo">
-        <img class="tool" src="../../img/vue.svg" alt="vue logo">
-        <img class="tool" src="../../img/bootstrap.png" alt="bootstrap logo">
-        <img class="tool" src="../../img/git.png" alt="git logo">
-        <img class="tool" src="../../img/github.svg" alt="github logo">
-        <img class="tool" src="../../img/microsoft.svg" alt="microsoft logo">
-        <img class="tool" src="../../img/postman.svg" alt="postman logo">
-        <img class="tool" src="../../img/vscode.svg" alt="vscode logo">
+        <img class="tool" src="/img/html.png" alt="HTML5 logo">
+        <img class="tool" src="/img/css.png" alt="logo">
+        <img class="tool" src="/img/js.png" alt="js logo">
+        <img class="tool" src="/img/laravel.svg" alt="laravel logo">
+        <img class="tool" src="/img/mysql.svg" alt="mysql logo">
+        <img class="tool" src="/img/php.png" alt="logo">
+        <img class="tool" src="/img/sass.png" alt="php logo">
+        <img class="tool" src="/img/vitejs.svg" alt="vitejs logo">
+        <img class="tool" src="/img/vue.svg" alt="vue logo">
+        <img class="tool" src="/img/bootstrap.png" alt="bootstrap logo">
+        <img class="tool" src="/img/git.png" alt="git logo">
+        <img class="tool" src="/img/github.svg" alt="github logo">
+        <img class="tool" src="/img/microsoft.svg" alt="microsoft logo">
+        <img class="tool" src="/img/postman.svg" alt="postman logo">
+        <img class="tool" src="/img/vscode.svg" alt="vscode logo">
       </div>
     </div>
   </section>

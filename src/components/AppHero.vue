@@ -34,7 +34,7 @@
 
         <!-- right side -->
         <div class="thumbnail">
-          <img src="../../img/Picsart_24-01-25_16-12-02-368-PhotoRoom.png-PhotoRoom.png" alt="Portfolio image">
+          <img src="/img/Picsart_24-01-25_16-12-02-368-PhotoRoom.png-PhotoRoom.png" alt="Portfolio image">
         </div>
       </div>
     </div>

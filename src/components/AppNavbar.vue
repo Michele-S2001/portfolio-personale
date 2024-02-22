@@ -1,5 +1,11 @@
 <script>
 export default {
+  data() {
+    return {
+      showOffCanvas: false
+    }
+  },
+
   methods: {
     scrollTo(element) {
       const targetElement = document.getElementById(`${element}`);
@@ -10,6 +16,14 @@ export default {
 
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth'});
+    },
+
+    showCanvas() {
+      this.showOffCanvas = true;
+    },
+
+    hideCanvas() {
+      this.showOffCanvas = false;
     }
   }
 }
@@ -23,13 +37,26 @@ export default {
         <div class="navbar__link">
           <a @click="scrollToTop()">&lt;/&gt;</a>
         </div>
-        <div class="navbar__link">
+        <div class="navbar__link toHide">
           <a @click="scrollTo('about')">About</a>
         </div>
-        <div class="navbar__link">
+        <div class="navbar__link toHide">
           <a @click="scrollTo('projects')">Progetti</a>
         </div>
+        <div class="navbar__link toHide">
+          <a @click="scrollTo('technologies')">Tools</a>
+        </div>
+        <div class="hamburger" @click="showCanvas">
+          <font-awesome-icon icon="bars" />
+        </div>
       </nav>
+    </div>
+    <div class="hideMenu" :class="{'show' : showOffCanvas}">
+      <font-awesome-icon icon="x" size="xl" @click="hideCanvas" class="x"/>
+      <div class="links">
+        <a @click="scrollTo('about')">About</a>
+        <a @click="scrollTo('projects')">Progetti</a>
+      </div>
     </div>
   </header>
 </template>
@@ -45,6 +72,7 @@ export default {
   .navbar {
     backdrop-filter: blur(10px);
     display: flex;
+    align-items: center;
     gap: 20px;
     padding: 20px 30px;
     border-radius: 40px;
@@ -84,7 +112,56 @@ export default {
       }
     }
 
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
 
+  }
+  .hideMenu {
+    display: none;
+    transform: translateX(670px);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    text-align: right;
+    backdrop-filter: blur(20px);
+    transition: 0.5s ease-in;
+
+    .x {
+      cursor: pointer;
+    }
+
+    .links {
+      padding: 30px;
+      line-height: 64px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    .navbar {
+
+      &__link.toHide {
+        display: none;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+
+    .hideMenu {
+      display: block;
+
+      &.show {
+        transform: translateX(0);
+      }
+    }
   }
 }
 

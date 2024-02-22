@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faArrowTurnDown } from '@fortawesome/free-solid-svg-icons'
+import { faArrowTurnDown, faBars, faX } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faGithub, faLinkedin, faEnvelope, faInstagram, faArrowTurnDown)
+library.add(faGithub, faLinkedin, faEnvelope, faInstagram, faArrowTurnDown, faBars, faX)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(router).mount('#app')

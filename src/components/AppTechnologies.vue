@@ -5,9 +5,9 @@
 </script>
 
 <template>
-  <section class="technologies-section px-10">
+  <section id="technologies" class="technologies-section px-10">
     <div class="container">
-      <h2>Technologies</h2>
+      <h2>Tecn<span>olo</span>gie</h2>
       <div class="tools">
         <img class="tool" src="../../img/tools/html-5.png" alt="HTML5 logo">
         <img class="tool" src="../../img/tools/css-3.png" alt="logo">
@@ -31,16 +31,19 @@
 
 
 <style lang="scss" scoped>
-
+@use '../styles/partials/vars' as *;
 .technologies-section {
   padding-top: 60px;
   padding-bottom: 60px;
 
   h2 {
-    font-size: 34px;
+    font-size: 37px;
     font-weight: normal;
     text-align: center;
     margin-bottom: 24px;
+    span {
+      color: $orange;
+    }
   }
 
   .tools {

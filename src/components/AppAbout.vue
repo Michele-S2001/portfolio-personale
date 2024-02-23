@@ -6,7 +6,7 @@
           Ab<span>out</span> 
         </div>
         <div class="about__text">
-          Salve visitatore, sono Michele Serafini, un appassionato e neofita Full Stack Web Developer che ha appena fatto il suo ingresso in questo mondo. Sono qui con grande entusiasmo e determinazione per imparare e crescere. Con una mentalità aperta e la voglia di affrontare nuove sfide, non vedo l'ora di mettermi alla prova e contribuire al mondo della tecnologia. Grazie per la visita sul mio primo e semplice portfolio online !
+          Ciao sono Michele, un appassionato e neofita Full Stack Web Developer che ha appena fatto il suo ingresso in questo mondo. Sono qui con grande entusiasmo e determinazione per imparare e crescere. Con una mentalità aperta e la voglia di affrontare nuove sfide, non vedo l'ora di mettermi alla prova e contribuire al mondo della tecnologia. L'obbiettivo è di non accontentarsi mai perché c'è sempre da imparare.
         </div>
       </div>
       <div class="cv-download">

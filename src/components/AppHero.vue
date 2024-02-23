@@ -26,7 +26,7 @@
             <a class="icon" href="mailto: serafini.michele01@gmail.com">
               <font-awesome-icon icon="fa-regular fa-envelope" size="2xl"/>
             </a>
-            <a class="icon" href="https://www.instagram.com/myser2001/">
+            <a class="icon" href="https://www.instagram.com/myser2001/" target="_blank">
               <font-awesome-icon icon="fa-brands fa-instagram" size="2xl"/>
             </a>
           </div>

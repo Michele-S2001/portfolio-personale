@@ -134,7 +134,7 @@ export default {
     text-align: right;
     backdrop-filter: blur(20px);
     background-color: rgba($grey, $alpha: 0.6);
-    transition: 0.5s ease-in;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     .x {
       cursor: pointer;

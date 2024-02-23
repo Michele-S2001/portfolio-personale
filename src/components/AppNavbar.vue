@@ -51,13 +51,16 @@ export default {
         </div>
       </nav>
     </div>
-    <div class="offCanvas" :class="{'show' : showOffCanvas}">
-      <font-awesome-icon icon="x" size="xl" @click="hideCanvas" class="x"/>
-      <div class="links">
-        <a @click="scrollToTop()">&lt;/&gt;</a>
-        <a @click="scrollTo('about')">About</a>
-        <a @click="scrollTo('technologies')">Tecnologie</a>
-        <a @click="scrollTo('projects')">Progetti</a>
+    <div class="outer-offCanvas" :class="{'show' : showOffCanvas}">
+      <div class="overlay" @click="hideCanvas"></div>
+      <div class="offCanvas">
+        <font-awesome-icon icon="x" size="xl" @click="hideCanvas" class="x"/>
+        <div class="links">
+          <a @click="scrollToTop()">&lt;/&gt;</a>
+          <a @click="scrollTo('about')">About</a>
+          <a @click="scrollTo('technologies')">Tecnologie</a>
+          <a @click="scrollTo('projects')">Progetti</a>
+        </div>
       </div>
     </div>
   </header>
@@ -121,31 +124,45 @@ export default {
     }
 
   }
-  .offCanvas {
+
+  .outer-offCanvas {
+    transition: 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
     display: none;
-    transform: translateX(670px) rotate(-10deg);
-    padding-top: 30px;
-    padding-right: 40px;
     position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 70vw;
-    text-align: right;
-    backdrop-filter: blur(20px);
-    background-color: rgba($grey, $alpha: 0.6);
-    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    inset: 0;
+    transform: translateX(730px);
 
-    .x {
-      cursor: pointer;
+    .overlay {
+      height: 100%;
+      width: 20vw;
+      display: none;
     }
-
-    .links {
-      padding-top: 24px;
-      line-height: 64px;
-      font-size: 24px;
-      & > * {
+    .offCanvas {
+      z-index: 5;
+      padding-top: 30px;
+      padding-right: 40px;
+      height: 100%;
+      width: 80vw;
+      text-align: right;
+      backdrop-filter: blur(20px);
+      background-color: rgba($grey, $alpha: 0.6);
+      transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      
+      .x {
         cursor: pointer;
+      }
+  
+      .links {
+        padding-top: 24px;
+        line-height: 64px;
+        font-size: 24px;
+        
+        & > * {
+          cursor: pointer;
+          &:hover, &:active {
+            color: $orange;
+          }
+        }
       }
     }
   }
@@ -163,9 +180,16 @@ export default {
       }
     }
 
-    .offCanvas {
-      display: block;
+    .outer-offCanvas {
+      display: flex;
 
+      .overlay {
+        display: block;
+        order: 1;
+      }
+      .offCanvas {
+        order: 2;
+      }
       &.show {
         transform: translateX(0);
       }

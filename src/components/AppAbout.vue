@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="cv-download">
-        <a class="cs-button" target="_blank" href="file/Michele_Serafini_CV.pdf">Scarica il mio CV</a>
+        <a class="cs-button" target="_blank" href="file/Michele-Serafini-CV.pdf">Scarica il mio CV</a>
       </div>
     </div>
   </section>

@@ -1,9 +1,3 @@
-<script>
-  export default {
-    
-  }
-</script>
-
 <template>
   <section id="technologies" class="technologies-section px-10">
     <div class="container">
@@ -11,13 +5,15 @@
       <div class="tools">
         <img class="tool" src="/img/html.png" alt="HTML5 logo">
         <img class="tool" src="/img/css.png" alt="logo">
-        <img class="tool" src="/img/js.png" alt="js logo">
+        <img class="tool" src="/img/js.png" alt="javascript logo">
+        <img class="tool" src="/img/ts-logo.png" alt="typescrit logo">
         <img class="tool" src="/img/laravel.svg" alt="laravel logo">
         <img class="tool" src="/img/mysql.svg" alt="mysql logo">
         <img class="tool" src="/img/php.png" alt="logo">
         <img class="tool" src="/img/sass.png" alt="php logo">
         <img class="tool" src="/img/vitejs.svg" alt="vitejs logo">
         <img class="tool" src="/img/vue.svg" alt="vue logo">
+        <img class="tool" src="/img/react-logo.png" alt="react logo">
         <img class="tool" src="/img/bootstrap.png" alt="bootstrap logo">
         <img class="tool" src="/img/git.png" alt="git logo">
         <img class="tool" src="/img/github.svg" alt="github logo">

@@ -4,6 +4,20 @@ export default {
     return {
       projects: [
         {
+          name: 'Weather-app',
+          link: 'https://github.com/Michele-S2001/react-weather-app',
+          imgPath: './img/project-12.png',
+          description: 'La mia web app meteo offre agli utenti un modo semplice e intuitivo per controllare le previsioni del tempo in qualsiasi parte del mondo. Utilizzando le API meteo più aggiornate, la mia applicazione fornisce informazioni accurate e dettagliate sulle condizioni meteorologiche attuali',
+          visible: false
+        },
+        {
+          name: 'Todo-list',
+          link: 'https://github.com/Michele-S2001/react-todo-list',
+          imgPath: './img/project-11.png',
+          description: 'Questa è una semplice applicazione To-Do List sviluppata in React. Gli elementi della lista vengono salvati nel localStorage del browser, permettendo di mantenere i dati anche dopo la chiusura del browser.Le funzionalità principali sono: l\'aggiunta di una task e la sua successiva eliminazione',
+          visible: false
+        },
+        {
           name: 'TasteIT',
           link: 'https://github.com/Michele-S2001?tab=repositories&q=deliveboo&type=&language=&sort=',
           imgPath: './img/project-10.png',
@@ -11,24 +25,10 @@ export default {
           visible: false
         },
         {
-          name: 'Dashboard',
-          link: 'https://github.com/Michele-S2001/html-css-bootstrap-dashboard',
-          imgPath: './img/project-2.png',
-          description: 'Una dashboard progettata per far pratica con bootstrap, costruendo quindi un gestionale con l\'aiuto di questo framework, gestendo le sue utility class per un layout responsive',
-          visible: false
-        },
-        {
           name: 'Spotify',
           link: 'https://github.com/Michele-S2001/html-css-spotifyweb',
           imgPath: './img/project-5.png',
           description: 'Una replica della webapp di spotify che ci ha messo alla prova nella gestione dell\'overflow, del flexbox e il comportamento responsive del layout',
-          visible: false
-        },
-        {
-          name: 'Discord',
-          link: 'https://github.com/Michele-S2001/htmlcss-discord',
-          imgPath: './img/project-3.png',
-          description: 'Una replica di discord interamente in HTML e CSS plain',
           visible: false
         },
         {

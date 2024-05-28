@@ -2,9 +2,9 @@
   <section id="about" class="about-section px-10">
     <div class="container">
       <div class="about grid">
-        <div class="about__title">
+        <h2 class="about__title">
           Ab<span>out</span> 
-        </div>
+        </h2>
         <div class="about__text">
           Ciao sono Michele, un appassionato e neofita Full Stack Web Developer che ha appena fatto il suo ingresso in questo mondo. Sono qui con grande entusiasmo e determinazione per imparare e crescere. Con una mentalità aperta e la voglia di affrontare nuove sfide, non vedo l'ora di mettermi alla prova e contribuire al mondo della tecnologia. L'obbiettivo è di non accontentarsi mai perché c'è sempre da imparare.
         </div>
@@ -29,6 +29,7 @@
       grid-column: 1 / 5;
       padding-top: 20px;
       font-size: clamp(46px, 6vw, 70px);
+      font-weight: normal;
 
       span {
         color: $orange;

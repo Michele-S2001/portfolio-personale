@@ -10,11 +10,8 @@
 </script>
 <template>
   <AppNavbar/>
-  <slot></slot>
+  <main>
+    <slot></slot>
+  </main>
   <AppFooter/>
 </template>
-
-
-<style lang="scss" scoped>
-
-</style>

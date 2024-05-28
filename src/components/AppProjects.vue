@@ -68,29 +68,29 @@ export default {
         <!-- start project card -->
         <div class="project-card" v-for="(project, i) in projects" :key="i">
           <div class="project-card__header">
-            <span class="name">{{ project.name }}</span>
-            <img :src="project.imgPath">
+            <span class="name" role="heading" aria-level="3">{{ project.name }}</span>
+            <img :src="project.imgPath" aria-hidden="true">
           </div>
           <div class="project-card__body">
             <div class="buttons">
-              <a :href="project.link" class="cta-github" target="_blank">
+              <a :href="project.link" class="cta-github" target="_blank" aria-label="pagina github del progetto">
                 <font-awesome-icon icon="fa-brands fa-github" size="2xl" />
                 Github
               </a>
-              <button class="cta-description" @click="showProjDesc(i)">
-                Description
+              <button class="cta-description" @click="showProjDesc(i)" aria-label="piccola descrizione del progetto" :aria-expanded="project.visible">
+                Descrizione
                 <font-awesome-icon icon="fa-solid fa-arrow-turn-down" />
               </button>
             </div>
             <div class="project-card__footer" :class="{ 'show' : project.visible }">
-              <p>{{ project.description }}</p>
+              <p tabindex="0">{{ project.description }}</p>
             </div>
           </div>
         </div>
         <!-- end project card -->
       </div>
       <div class="github">
-        <a href="https://github.com/Michele-S2001" target="_blank">My Github</a>
+        <a href="https://github.com/Michele-S2001" target="_blank">Il mio Github</a>
       </div>
     </div>
   </section>
@@ -170,7 +170,7 @@ export default {
           }
         }
         p {
-          overflow: auto;
+          overflow-y: auto;
           opacity: 0;
           height: 0;
           transition: all 0.2s ease-in-out;

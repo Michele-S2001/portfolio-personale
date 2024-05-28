@@ -17,16 +17,31 @@
           </div>
           <!-- contatti -->
           <div class="contacts">
-            <a class="icon" href="https://github.com/Michele-S2001" target="_blank">
+            <a 
+              class="icon" 
+              href="https://github.com/Michele-S2001" 
+              target="_blank"
+              aria-label="profilo github">
               <font-awesome-icon icon="fa-brands fa-github" size="2xl" />
             </a>
-            <a class="icon" href="https://www.linkedin.com/in/michele-serafini-08574b1b7/" target="_blank">
+            <a 
+              class="icon" 
+              href="https://www.linkedin.com/in/michele-serafini-08574b1b7/" 
+              target="_blank"
+              aria-label="profilo linkedin">
               <font-awesome-icon icon="fa-brands fa-linkedin" size="2xl" />
             </a>
-            <a class="icon" href="mailto: serafini.michele01@gmail.com">
+            <a 
+              class="icon" 
+              href="mailto: serafini.michele01@gmail.com"
+              aria-label="email">
               <font-awesome-icon icon="fa-regular fa-envelope" size="2xl"/>
             </a>
-            <a class="icon" href="https://www.instagram.com/myser2001/" target="_blank">
+            <a 
+              class="icon" 
+              href="https://www.instagram.com/myser2001/" 
+              target="_blank"
+              aria-label="profilo instagram">
               <font-awesome-icon icon="fa-brands fa-instagram" size="2xl"/>
             </a>
           </div>
@@ -34,7 +49,7 @@
 
         <!-- right side -->
         <div class="thumbnail">
-          <img src="/img/Picsart_24-01-25_16-12-02-368-PhotoRoom.png-PhotoRoom.png" alt="Portfolio image">
+          <img src="/img/Picsart_24-01-25_16-12-02-368-PhotoRoom.png-PhotoRoom.png" alt="Foto del volto di michele serafini, con un effetto particolare applicato ad essa">
         </div>
       </div>
     </div>
@@ -45,7 +60,7 @@
 <style lang="scss" scoped>
 @use '../styles/partials/vars' as *;
 .hero {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 150px;
 
   &__inner {
@@ -98,7 +113,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 150px;
+    padding-top: 80px;
     padding-bottom: 100px;
 
     &__inner {

@@ -11,11 +11,13 @@ export default {
       const targetElement = document.getElementById(`${element}`);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
+        this.showOffCanvas = false;
       }
     },
 
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth'});
+      this.showOffCanvas = false;
     },
 
     showCanvas() {
@@ -35,7 +37,7 @@ export default {
     <div class="container">
       <nav class="navbar">
         <div class="navbar__link">
-          <a @click="scrollToTop()">&lt;/&gt;</a>
+          <a @click="scrollToTop()" aria-label="Torna all'inizio della pagina">&lt;/&gt;</a>
         </div>
         <div class="navbar__link toHide">
           <a @click="scrollTo('about')">About</a>
@@ -46,17 +48,17 @@ export default {
         <div class="navbar__link toHide">
           <a @click="scrollTo('projects')">Progetti</a>
         </div>
-        <div class="hamburger" @click="showCanvas">
+        <div role="button" class="hamburger" @click="showCanvas" aria-label="menu">
           <font-awesome-icon icon="bars" />
         </div>
       </nav>
     </div>
-    <div class="outer-offCanvas" :class="{'show' : showOffCanvas}">
+    <div class="outer-offCanvas" :class="{'show' : showOffCanvas}" :aria-expanded="showOffCanvas">
       <div class="overlay" @click="hideCanvas"></div>
       <div class="offCanvas">
         <font-awesome-icon icon="x" size="xl" @click="hideCanvas" class="x"/>
         <div class="links">
-          <a @click="scrollToTop()">&lt;/&gt;</a>
+          <a @click="scrollToTop()" aria-label="Torna all'inizio della pagina">&lt;/&gt;</a>
           <a @click="scrollTo('about')">About</a>
           <a @click="scrollTo('technologies')">Tecnologie</a>
           <a @click="scrollTo('projects')">Progetti</a>
@@ -69,7 +71,7 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/vars' as *;
 .page-header {
-  position: fixed;
+  position: sticky;
   top: 6px;
   left: 0;
   right: 0;

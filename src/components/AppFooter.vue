@@ -32,7 +32,8 @@
 .footer-section {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $orange;
+  background-color: $grey;
+  border-top: 2px solid $white;
   .contacts {
     display: flex;
     flex-wrap: wrap;
@@ -45,9 +46,10 @@
         display: inline-block;
         margin-left: 13px;
       }
+      transition: 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     & > .icon:hover {
-      color: $grey;
+      transform: scale(1.1);
     }
   }
 }

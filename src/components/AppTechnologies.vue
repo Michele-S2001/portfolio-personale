@@ -2,24 +2,24 @@
   <section id="technologies" class="technologies-section px-10">
     <div class="container">
       <h2>Tecn<span>olo</span>gie</h2>
-      <div class="tools">
-        <img class="tool" src="/img/html.png" alt="HTML5 logo">
-        <img class="tool" src="/img/css.png" alt="logo">
-        <img class="tool" src="/img/js.png" alt="javascript logo">
-        <img class="tool" src="/img/ts-logo.png" alt="typescrit logo">
-        <img class="tool" src="/img/laravel.svg" alt="laravel logo">
-        <img class="tool" src="/img/mysql.svg" alt="mysql logo">
-        <img class="tool" src="/img/php.png" alt="logo">
-        <img class="tool" src="/img/sass.png" alt="php logo">
-        <img class="tool" src="/img/vitejs.svg" alt="vitejs logo">
-        <img class="tool" src="/img/vue.svg" alt="vue logo">
-        <img class="tool" src="/img/react-logo.png" alt="react logo">
-        <img class="tool" src="/img/bootstrap.png" alt="bootstrap logo">
-        <img class="tool" src="/img/git.png" alt="git logo">
-        <img class="tool" src="/img/github.svg" alt="github logo">
-        <img class="tool" src="/img/microsoft.svg" alt="microsoft logo">
-        <img class="tool" src="/img/postman.svg" alt="postman logo">
-        <img class="tool" src="/img/vscode.svg" alt="vscode logo">
+      <div class="tools" role="group">
+        <img class="tool" src="/img/html.png" alt="logo di HTML5">
+        <img class="tool" src="/img/css.png" alt="logo di CSS">
+        <img class="tool" src="/img/js.png" alt="logo javascript">
+        <img class="tool" src="/img/ts-logo.png" alt="logo di typescript">
+        <img class="tool" src="/img/laravel.svg" alt="logo di laravel">
+        <img class="tool" src="/img/mysql.svg" alt="logo di mysql">
+        <img class="tool" src="/img/php.png" alt="logo di php">
+        <img class="tool" src="/img/sass.png" alt="logo di sass">
+        <img class="tool" src="/img/vitejs.svg" alt="logo di vite">
+        <img class="tool" src="/img/vue.svg" alt="logo vue">
+        <img class="tool" src="/img/react-logo.png" alt="logo di react">
+        <img class="tool" src="/img/bootstrap.png" alt="logo di bootstrap">
+        <img class="tool" src="/img/git.png" alt="logo di git">
+        <img class="tool" src="/img/github.svg" alt="logo di github">
+        <img class="tool" src="/img/microsoft.svg" alt="logo di microsoft">
+        <img class="tool" src="/img/postman.svg" alt="logo di postman">
+        <img class="tool" src="/img/vscode.svg" alt="logo di vscode">
       </div>
     </div>
   </section>

@@ -32,7 +32,11 @@ button {
   font-family: 'Fira Code Variable', sans-serif;
   background-color: transparent;
   border: none;
-  outline: none;
+  &:focus {
+    outline: 2px solid $white;
+    outline-offset: 2px;
+    border-radius: inherit;
+  }
 }
 
 

@@ -36,34 +36,48 @@ export default {
   <header class="page-header px-10">
     <div class="container">
       <nav class="navbar">
-        <div class="navbar__link">
+        <div class="navbar__link" tabindex="0">
           <a @click="scrollToTop()" aria-label="Torna all'inizio della pagina">&lt;/&gt;</a>
         </div>
-        <div class="navbar__link toHide">
+        <div class="navbar__link toHide" tabindex="0">
           <a @click="scrollTo('about')">About</a>
         </div>
-        <div class="navbar__link toHide">
+        <div class="navbar__link toHide" tabindex="0">
           <a @click="scrollTo('technologies')">Tecnologie</a>
         </div>
-        <div class="navbar__link toHide">
+        <div class="navbar__link toHide" tabindex="0">
           <a @click="scrollTo('projects')">Progetti</a>
         </div>
-        <div role="button" class="hamburger" @click="showCanvas" aria-label="menu">
+        <div 
+          :aria-expanded="showOffCanvas"
+          role="button" 
+          class="hamburger" 
+          @click="showCanvas" 
+          aria-label="menu laterale" 
+          tabindex="0">
           <font-awesome-icon icon="bars" />
         </div>
       </nav>
     </div>
-    <div class="outer-offCanvas" :class="{'show' : showOffCanvas}" :aria-expanded="showOffCanvas">
-      <div class="overlay" @click="hideCanvas"></div>
-      <div class="offCanvas">
+    <div class="outer-offCanvas" :class="{'show' : showOffCanvas}">
+      <div class="overlay" @click="hideCanvas" aria-hidden="true"></div>
+      <nav class="offCanvas" aria-label="laterale">
         <font-awesome-icon icon="x" size="xl" @click="hideCanvas" class="x"/>
-        <div class="links">
-          <a @click="scrollToTop()" aria-label="Torna all'inizio della pagina">&lt;/&gt;</a>
-          <a @click="scrollTo('about')">About</a>
-          <a @click="scrollTo('technologies')">Tecnologie</a>
-          <a @click="scrollTo('projects')">Progetti</a>
-        </div>
-      </div>
+        <ul class="links">
+          <li>
+            <a @click="scrollToTop()" aria-label="Torna all'inizio della pagina">&lt;/&gt;</a>
+          </li>
+          <li>
+            <a @click="scrollTo('about')">About</a>
+          </li>
+          <li>
+            <a @click="scrollTo('technologies')">Tecnologie</a>
+          </li>
+          <li>
+            <a @click="scrollTo('projects')">Progetti</a>
+          </li>          
+        </ul>
+      </nav>
     </div>
   </header>
 </template>

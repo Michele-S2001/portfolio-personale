@@ -1,5 +1,5 @@
 <template>
-  <section id="technologies" class="technologies-section px-10">
+  <section id="technologies" class="technologies-section px-10 animated-fade-in">
     <div class="container">
       <h2>Tecn<span>olo</span>gie</h2>
       <div class="tools" role="group">

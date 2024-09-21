@@ -61,7 +61,7 @@ export default {
 </script>
 
 <template>
-  <section id="projects" class="projects-section px-10">
+  <section id="projects" class="projects-section px-10 animated-fade-in">
     <div class="container">
       <h2 class="section-title"><span>Alcuni</span> progetti</h2>
       <div class="projects">

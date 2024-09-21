@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about-section px-10">
+  <section id="about" class="about-section px-10 animated-fade-in">
     <div class="container">
       <div class="about grid">
         <h2 class="about__title">

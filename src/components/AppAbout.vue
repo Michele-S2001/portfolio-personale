@@ -6,7 +6,7 @@
           Ab<span>out</span> 
         </h2>
         <div class="about__text">
-          Ciao sono Michele, un appassionato e neofita Full Stack Web Developer che ha appena fatto il suo ingresso in questo mondo. Sono qui con grande entusiasmo e determinazione per imparare e crescere. Con una mentalità aperta e la voglia di affrontare nuove sfide, non vedo l'ora di mettermi alla prova e contribuire al mondo della tecnologia. L'obbiettivo è di non accontentarsi mai perché c'è sempre da imparare.
+          Ciao! Sono Michele, uno sviluppatore formato come full-stack con una grande passione per la tecnologia e la programmazione. Dopo aver mosso i primi passi da neofita, oggi lavoro con entusiasmo presso TOP Consulting & Services srl, dove mi occupo principalmente dello sviluppo front-end. Ogni giorno è un'occasione per imparare, migliorare e affrontare nuove sfide. Credo fortemente che nella tecnologia non si smetta mai di crescere: per questo mantengo una mentalità aperta, curiosa e sempre pronta a mettersi in gioco.
         </div>
       </div>
       <div class="cv-download">

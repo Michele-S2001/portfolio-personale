@@ -20,6 +20,34 @@ export default {
           altText: "logo di typescript" 
         },
         { 
+          path: "/img/vue.svg", 
+          altText: "logo vue" 
+        },
+        { 
+          path: "/img/react-logo.png", 
+          altText: "logo di react" 
+        },
+        { 
+          path: "/img/vitejs.svg", 
+          altText: "logo di vite" 
+        },
+        {
+          path: "/img/nuxt.svg",
+          altText: "logo di nuxt"
+        },
+        { 
+          path: "/img/bootstrap.png", 
+          altText: "logo di bootstrap" 
+        },
+        { 
+          path: "/img/sass.png", 
+          altText: "logo di sass" 
+        },
+        {
+          path: "/img/tailwindcss.svg",
+          alt: "logo tailwind"
+        },
+        { 
           path: "/img/laravel.svg", 
           altText: "logo di laravel" 
         },
@@ -32,45 +60,9 @@ export default {
           altText: "logo di php" 
         },
         { 
-          path: "/img/sass.png", 
-          altText: "logo di sass" 
-        },
-        { 
-          path: "/img/vitejs.svg", 
-          altText: "logo di vite" 
-        },
-        { 
-          path: "/img/vue.svg", 
-          altText: "logo vue" 
-        },
-        { 
-          path: "/img/react-logo.png", 
-          altText: "logo di react" 
-        },
-        { 
-          path: "/img/bootstrap.png", 
-          altText: "logo di bootstrap" 
-        },
-        { 
           path: "/img/git.png", 
           altText: "logo di git" 
         },
-        { 
-          path: "/img/github.svg", 
-          altText: "logo di github" 
-        },
-        { 
-          path: "/img/microsoft.svg", 
-          altText: "logo di microsoft" 
-        },
-        { 
-          path: "/img/postman.svg", 
-          altText: "logo di postman" 
-        },
-        { 
-          path: "/img/vscode.svg", 
-          altText: "logo di vscode" 
-        }
       ]
     }
   }

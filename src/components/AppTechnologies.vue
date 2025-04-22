@@ -1,66 +1,68 @@
 <script>
+const basePath = import.meta.env.BASE_URL;
+
 export default {
   data() {
     return {
       tecnologiesData: [
         { 
-          path: "/img/html.png", 
+          path: `${basePath}img/html.png`, 
           altText: "logo di HTML5" 
         },
         { 
-          path: "/img/css.png", 
+          path: `${basePath}img/css.png`, 
           altText: "logo di CSS" 
         },
         { 
-          path: "/img/js.png", 
+          path: `${basePath}img/js.png`, 
           altText: "logo javascript" 
         },
         { 
-          path: "/img/ts-logo.png", 
+          path: `${basePath}img/ts-logo.png`, 
           altText: "logo di typescript" 
         },
         { 
-          path: "/img/vue.svg", 
+          path: `${basePath}img/vue.svg`, 
           altText: "logo vue" 
         },
         { 
-          path: "/img/react-logo.png", 
+          path: `${basePath}img/react-logo.png`, 
           altText: "logo di react" 
         },
         { 
-          path: "/img/vitejs.svg", 
+          path: `${basePath}img/vitejs.svg`, 
           altText: "logo di vite" 
         },
         {
-          path: "/img/nuxt.svg",
+          path: `${basePath}img/nuxt.svg`,
           altText: "logo di nuxt"
         },
         { 
-          path: "/img/bootstrap.png", 
+          path: `${basePath}img/bootstrap.png`, 
           altText: "logo di bootstrap" 
         },
         { 
-          path: "/img/sass.png", 
+          path: `${basePath}img/sass.png`, 
           altText: "logo di sass" 
         },
         {
-          path: "/img/tailwindcss.svg",
-          alt: "logo tailwind"
+          path: `${basePath}img/tailwindcss.svg`,
+          altText: "logo tailwind"
         },
         { 
-          path: "/img/laravel.svg", 
+          path: `${basePath}img/laravel.svg`, 
           altText: "logo di laravel" 
         },
         { 
-          path: "/img/mysql.svg", 
+          path: `${basePath}img/mysql.svg`, 
           altText: "logo di mysql" 
         },
         { 
-          path: "/img/php.png", 
+          path: `${basePath}img/php.png`, 
           altText: "logo di php" 
         },
         { 
-          path: "/img/git.png", 
+          path: `${basePath}img/git.png`, 
           altText: "logo di git" 
         },
       ]

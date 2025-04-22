@@ -1,25 +1,88 @@
+<script>
+export default {
+  data() {
+    return {
+      tecnologiesData: [
+        { 
+          path: "/img/html.png", 
+          altText: "logo di HTML5" 
+        },
+        { 
+          path: "/img/css.png", 
+          altText: "logo di CSS" 
+        },
+        { 
+          path: "/img/js.png", 
+          altText: "logo javascript" 
+        },
+        { 
+          path: "/img/ts-logo.png", 
+          altText: "logo di typescript" 
+        },
+        { 
+          path: "/img/laravel.svg", 
+          altText: "logo di laravel" 
+        },
+        { 
+          path: "/img/mysql.svg", 
+          altText: "logo di mysql" 
+        },
+        { 
+          path: "/img/php.png", 
+          altText: "logo di php" 
+        },
+        { 
+          path: "/img/sass.png", 
+          altText: "logo di sass" 
+        },
+        { 
+          path: "/img/vitejs.svg", 
+          altText: "logo di vite" 
+        },
+        { 
+          path: "/img/vue.svg", 
+          altText: "logo vue" 
+        },
+        { 
+          path: "/img/react-logo.png", 
+          altText: "logo di react" 
+        },
+        { 
+          path: "/img/bootstrap.png", 
+          altText: "logo di bootstrap" 
+        },
+        { 
+          path: "/img/git.png", 
+          altText: "logo di git" 
+        },
+        { 
+          path: "/img/github.svg", 
+          altText: "logo di github" 
+        },
+        { 
+          path: "/img/microsoft.svg", 
+          altText: "logo di microsoft" 
+        },
+        { 
+          path: "/img/postman.svg", 
+          altText: "logo di postman" 
+        },
+        { 
+          path: "/img/vscode.svg", 
+          altText: "logo di vscode" 
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <template>
   <section id="technologies" class="technologies-section px-10 animated-fade-in">
     <div class="container">
       <h2>Tecn<span>olo</span>gie</h2>
       <div class="tools" role="group">
-        <img class="tool" src="/img/html.png" alt="logo di HTML5">
-        <img class="tool" src="/img/css.png" alt="logo di CSS">
-        <img class="tool" src="/img/js.png" alt="logo javascript">
-        <img class="tool" src="/img/ts-logo.png" alt="logo di typescript">
-        <img class="tool" src="/img/laravel.svg" alt="logo di laravel">
-        <img class="tool" src="/img/mysql.svg" alt="logo di mysql">
-        <img class="tool" src="/img/php.png" alt="logo di php">
-        <img class="tool" src="/img/sass.png" alt="logo di sass">
-        <img class="tool" src="/img/vitejs.svg" alt="logo di vite">
-        <img class="tool" src="/img/vue.svg" alt="logo vue">
-        <img class="tool" src="/img/react-logo.png" alt="logo di react">
-        <img class="tool" src="/img/bootstrap.png" alt="logo di bootstrap">
-        <img class="tool" src="/img/git.png" alt="logo di git">
-        <img class="tool" src="/img/github.svg" alt="logo di github">
-        <img class="tool" src="/img/microsoft.svg" alt="logo di microsoft">
-        <img class="tool" src="/img/postman.svg" alt="logo di postman">
-        <img class="tool" src="/img/vscode.svg" alt="logo di vscode">
+        <img v-for="tcn in tecnologiesData" :key="tcn.path" :src="tcn.path" :alt="tcn.altText" class="tool">
       </div>
     </div>
   </section>

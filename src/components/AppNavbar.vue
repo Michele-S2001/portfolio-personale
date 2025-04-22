@@ -2,7 +2,32 @@
 export default {
   data() {
     return {
-      showOffCanvas: false
+      showOffCanvas: false,
+      linksData: [
+        {
+          gotToFn: () => this.scrollToTop(),
+          ariaText: "Torna all'inizio della pagina",
+          content: '</>'
+        },
+        {
+          gotToFn: () => this.scrollTo('about'),
+          ariaText: "Vai alla sezione about",
+          content: "About",
+          customClass: "toHide"
+        },
+        {
+          gotToFn: () => this.scrollTo('technologies'),
+          ariaText: "Vai alla sezione tecnologie",
+          content: "Tecnologie",
+          customClass: "toHide"
+        },
+        {
+          gotToFn: () => this.scrollTo('projects'),
+          ariaText: "Vai alla sezione progetti",
+          content: "Progetti",
+          customClass: "toHide"
+        },
+      ]
     }
   },
 
@@ -36,17 +61,13 @@ export default {
   <header class="page-header px-10">
     <div class="container">
       <nav class="navbar">
-        <div class="navbar__link" tabindex="0">
-          <a @click="scrollToTop()" aria-label="Torna all'inizio della pagina">&lt;/&gt;</a>
-        </div>
-        <div class="navbar__link toHide" tabindex="0">
-          <a @click="scrollTo('about')">About</a>
-        </div>
-        <div class="navbar__link toHide" tabindex="0">
-          <a @click="scrollTo('technologies')">Tecnologie</a>
-        </div>
-        <div class="navbar__link toHide" tabindex="0">
-          <a @click="scrollTo('projects')">Progetti</a>
+        <div 
+          v-for="navLink in linksData" :key="navLink.content"
+          class="navbar__link"
+          :class="navLink?.customClass"
+          tabindex="0"
+        >
+        	<a @click="navLink.gotToFn">{{ navLink.content }}</a>
         </div>
         <div 
           :aria-expanded="showOffCanvas"
@@ -64,18 +85,9 @@ export default {
       <nav class="offCanvas" aria-label="laterale">
         <font-awesome-icon icon="x" size="xl" @click="hideCanvas" class="x"/>
         <ul class="links">
-          <li>
-            <a @click="scrollToTop()" aria-label="Torna all'inizio della pagina">&lt;/&gt;</a>
-          </li>
-          <li>
-            <a @click="scrollTo('about')">About</a>
-          </li>
-          <li>
-            <a @click="scrollTo('technologies')">Tecnologie</a>
-          </li>
-          <li>
-            <a @click="scrollTo('projects')">Progetti</a>
-          </li>          
+          <li v-for="link in linksData" :key="link.content">
+            <a @click="link.gotToFn">{{ link.content }}</a>
+          </li>        
         </ul>
       </nav>
     </div>

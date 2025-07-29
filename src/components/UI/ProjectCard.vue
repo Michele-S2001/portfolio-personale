@@ -6,6 +6,11 @@ export default {
       required: true  
     }
   },
+  methods: {
+    showProjDesc() {
+      this.project.visible = !this.project?.visible
+    }
+  }
 }
 </script>
 
@@ -21,7 +26,7 @@ export default {
           <font-awesome-icon icon="fa-brands fa-github" size="2xl" />
           Github
         </a>
-        <button class="cta-description" @click="showProjDesc(i)" aria-label="piccola descrizione del progetto" :aria-expanded="project?.visible">
+        <button class="cta-description" @click="showProjDesc(project)" aria-label="piccola descrizione del progetto" :aria-expanded="project?.visible">
           Descrizione
           <font-awesome-icon icon="fa-solid fa-arrow-turn-down" />
         </button>

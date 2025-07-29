@@ -11,42 +11,42 @@ export default {
           name: 'Weather-app',
           link: 'https://github.com/Michele-S2001/react-weather-app',
           imgPath: `${basePath}img/project-12.png`,
-          description: 'La mia web app meteo offre agli utenti un modo semplice e intuitivo per controllare le previsioni del tempo in qualsiasi parte del mondo...',
+          description: 'La mia web app meteo offre agli utenti un modo semplice e intuitivo per controllare le previsioni del tempo in qualsiasi parte del mondo. Utilizzando le API meteo più aggiornate, la mia applicazione fornisce informazioni accurate e dettagliate sulle condizioni meteorologiche attuali',
           visible: false
         },
         {
           name: 'Todo-list',
           link: 'https://github.com/Michele-S2001/react-todo-list',
           imgPath: `${basePath}img/project-11.png`,
-          description: 'Questa è una semplice applicazione To-Do List sviluppata in React...',
+          description: 'Questa è una semplice applicazione To-Do List sviluppata in React. Gli elementi della lista vengono salvati nel localStorage del browser, permettendo di mantenere i dati anche dopo la chiusura del browser.Le funzionalità principali sono: l\'aggiunta di una task e la sua successiva eliminazione',
           visible: false
         },
         {
           name: 'TasteIT',
           link: 'https://github.com/Michele-S2001?tab=repositories&q=deliveboo&type=&language=&sort=',
           imgPath: `${basePath}img/project-10.png`,
-          description: 'Il progetto finale con Boolean...',
+          description: 'Il progetto finale con Boolean, contornato dall\'utilizzo di tutte le tecnologie e strumenti visti durante il corso boolean, un unione tra front-office con Vite (HTML, CSS, VUE) e back-office con Laravel (PHP, BOOTSTRAP), sviluppando le CRUD per il ristoratore autenticato e le API per una facile accessibilità ai dati da parte del cliente. Tutto rigorosamente riadattabile a qualsiasi viewport',
           visible: false
         },
         {
           name: 'Spotify',
           link: 'https://github.com/Michele-S2001/html-css-spotifyweb',
           imgPath: `${basePath}img/project-5.png`,
-          description: 'Una replica della webapp di Spotify...',
+          description: 'Una replica della webapp di spotify che ci ha messo alla prova nella gestione dell\'overflow, del flexbox e il comportamento responsive del layout',
           visible: false
         },
         {
           name: 'Boolzapp',
           link: 'https://github.com/Michele-S2001/vue-boolzapp',
           imgPath: `${basePath}img/project-7.png`,
-          description: 'Una replica di WhatsApp Web con Vue.js...',
+          description: 'Una replica di WhatsApp web utilizzando HTML, CSS, JavaScript con il framework Vue.js. Vue.js utilizzato per gestire in maniera efficente  lo stato dell\'applicazione e fornire una migliore esperienza utente, come la dinamicità delle chat per ogni contatto.',
           visible: false
         },
         {
           name: 'Boolflix',
           link: 'https://github.com/Michele-S2001/vite-boolflix',
           imgPath: `${basePath}img/project-9.png`,
-          description: 'Una piattaforma di streaming simile a Netflix...',
+          description: 'Sviluppo di una piattaforma di streaming video simile a Netflix, concentrandoci sull\'utilizzo di chiamate Axios per recuperare i dati dei film/serie-TV da un API di TMDB. Tutto questo utilizzando HTML, CSS, Axios, Vue.js e Node.js per creare una piattaforma reattiva alla ricerca dell\'utente',
           visible: false
         },
       ],
@@ -56,12 +56,6 @@ export default {
 
   components: {
     UIProjectCard
-  },
-
-  methods: {
-    showProjDesc(index) {
-      this.projects[index].visible = !this.projects[index].visible
-    }
   }
 }
 </script>
